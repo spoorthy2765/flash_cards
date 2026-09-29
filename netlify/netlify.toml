@@ -1,0 +1,16 @@
+# Netlify configuration for the Smart Flashcards landing page.
+#
+# This `netlify/` folder is a complete, ready-to-publish static site.
+# Two supported ways to deploy it:
+#
+#   A) Drag & drop (simplest): Netlify -> your site -> Deploys ->
+#      drag THIS `netlify` folder onto the drop zone.
+#
+#   B) Connect the Git repository: deploy from the repository root.
+#      The root `netlify.toml` already sets `publish = "netlify"`,
+#      so no extra configuration is needed in the Netlify UI.
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
