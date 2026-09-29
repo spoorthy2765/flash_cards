@@ -1,0 +1,28 @@
+# =========================================================
+# Smart Flashcards - Streamlit runtime & theme configuration
+# =========================================================
+# This file is picked up automatically both by local runs
+# (`streamlit run app.py`) and by hosted deployments
+# (Streamlit Community Cloud, Render, Docker, Hugging Face Spaces).
+# =========================================================
+
+[theme]
+# Mirrors the design tokens declared in components/ui.py
+base = "light"
+primaryColor = "#4f46e5"
+backgroundColor = "#f8fafc"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#0f172a"
+font = "sans serif"
+
+[server]
+# Required for hosted environments (no browser available inside the
+# container). Set this to false if you want `streamlit run app.py` to
+# auto-open a browser tab on your own machine.
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
