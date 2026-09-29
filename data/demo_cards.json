@@ -1,0 +1,432 @@
+{
+  "machine learning": [
+    {
+      "question": "What is Machine Learning?",
+      "answer": "Machine Learning is a branch of Artificial Intelligence where algorithms identify patterns from data to make decisions or predictions without explicit deterministic rules.",
+      "difficulty": "Easy",
+      "topic": "Machine Learning"
+    },
+    {
+      "question": "What is the fundamental difference between Supervised and Unsupervised Learning?",
+      "answer": "Supervised learning trains on labeled input-output pairs to predict targets, whereas unsupervised learning discovers latent structures, groupings, or clusters in unlabeled data.",
+      "difficulty": "Easy",
+      "topic": "Machine Learning"
+    },
+    {
+      "question": "What is Overfitting and how can it be mitigated?",
+      "answer": "Overfitting happens when a model learns noise and specific quirks of training data. It is mitigated using regularization (L1/L2), cross-validation, pruning, or dropout.",
+      "difficulty": "Medium",
+      "topic": "Machine Learning"
+    },
+    {
+      "question": "Explain the Bias-Variance Tradeoff.",
+      "answer": "High bias leads to underfitting due to overly simplistic assumptions; high variance leads to overfitting due to excessive sensitivity to training fluctuations. Optimal error balances both.",
+      "difficulty": "Medium",
+      "topic": "Machine Learning"
+    },
+    {
+      "question": "How does Gradient Descent optimize neural networks?",
+      "answer": "It iteratively adjusts model weights in the opposite direction of the loss function's gradient with respect to parameters, converging toward a local minimum.",
+      "difficulty": "Medium",
+      "topic": "Machine Learning"
+    },
+    {
+      "question": "What is the difference between Precision and Recall?",
+      "answer": "Precision measures true positives out of all predicted positive instances (accuracy of positives); recall measures true positives captured out of all actual positive instances.",
+      "difficulty": "Medium",
+      "topic": "Machine Learning"
+    },
+    {
+      "question": "What is Cross-Validation (K-Fold)?",
+      "answer": "K-Fold partitions data into K subsets, iteratively training on K-1 folds and testing on the remaining fold to provide an unbiased estimate of generalization performance.",
+      "difficulty": "Easy",
+      "topic": "Machine Learning"
+    },
+    {
+      "question": "What is the ROC curve and AUC score?",
+      "answer": "The ROC curve plots True Positive Rate against False Positive Rate across classification thresholds; AUC represents the probability that a model ranks a random positive higher than a negative.",
+      "difficulty": "Hard",
+      "topic": "Machine Learning"
+    },
+    {
+      "question": "What is L1 (Lasso) vs L2 (Ridge) Regularization?",
+      "answer": "L1 adds the absolute magnitude of coefficients penalizing weights to zero (feature selection); L2 adds squared magnitude shrinking weights smoothly toward zero.",
+      "difficulty": "Hard",
+      "topic": "Machine Learning"
+    },
+    {
+      "question": "What is an Ensemble Method (e.g., Random Forest)?",
+      "answer": "Ensemble methods aggregate predictions from multiple base models (via bagging or boosting) to achieve higher accuracy and reduce variance compared to individual estimators.",
+      "difficulty": "Medium",
+      "topic": "Machine Learning"
+    },
+    {
+      "question": "What is the Vanishing Gradient problem?",
+      "answer": "During backpropagation in deep networks, gradients can become exponentially small as they propagate backward, preventing early layers from updating their weights effectively.",
+      "difficulty": "Hard",
+      "topic": "Machine Learning"
+    },
+    {
+      "question": "Why is Feature Scaling essential in distance-based algorithms?",
+      "answer": "Algorithms like KNN and SVM calculate Euclidean distances; unscaled features with larger numeric ranges dominate the distance calculations, skewing results.",
+      "difficulty": "Easy",
+      "topic": "Machine Learning"
+    },
+    {
+      "question": "What is Reinforcement Learning (RL)?",
+      "answer": "A machine learning paradigm where an autonomous agent learns optimal decision-making policies through trial-and-error by interacting with an environment to maximize cumulative rewards.",
+      "difficulty": "Medium",
+      "topic": "Machine Learning"
+    },
+    {
+      "question": "What is a Confusion Matrix?",
+      "answer": "A 2x2 table that categorizes test predictions into True Positives, True Negatives, False Positives, and False Negatives to evaluate classifier performance comprehensively.",
+      "difficulty": "Easy",
+      "topic": "Machine Learning"
+    },
+    {
+      "question": "What is Transfer Learning?",
+      "answer": "Transfer learning leverages knowledge from a pre-trained model on a large generic dataset (e.g., ImageNet) and fine-tunes it on a smaller target domain task.",
+      "difficulty": "Hard",
+      "topic": "Machine Learning"
+    }
+  ],
+  "python": [
+    {
+      "question": "What makes Python an interpreted, dynamically-typed language?",
+      "answer": "Python code is executed line-by-line by the CPython interpreter bytecode virtual machine, and variable types are inferred and checked at runtime rather than compile-time.",
+      "difficulty": "Easy",
+      "topic": "Python"
+    },
+    {
+      "question": "What is the key difference between Lists and Tuples?",
+      "answer": "Lists are mutable and enclosed in square brackets `[]`; tuples are immutable, memory-efficient, hashable, and enclosed in parentheses `()`.",
+      "difficulty": "Easy",
+      "topic": "Python"
+    },
+    {
+      "question": "What is the Global Interpreter Lock (GIL) in CPython?",
+      "answer": "The GIL is a mutex synchronizing Python threads, ensuring only one native thread executes Python bytecode at any instant, limiting multi-threaded CPU-bound parallelism.",
+      "difficulty": "Hard",
+      "topic": "Python"
+    },
+    {
+      "question": "What are Python Decorators and how do they function?",
+      "answer": "Decorators are higher-order functions that take a function as input, wrap its execution, and return an enhanced callable without modifying the original source code.",
+      "difficulty": "Medium",
+      "topic": "Python"
+    },
+    {
+      "question": "How do Python Generators differ from normal functions?",
+      "answer": "Generators produce items lazily on demand using the `yield` keyword, maintaining execution state across iterations without allocating full sequences in memory.",
+      "difficulty": "Medium",
+      "topic": "Python"
+    },
+    {
+      "question": "What is the difference between `==` and `is` in Python?",
+      "answer": "`==` checks for equality of value, whereas `is` checks for object identity (whether two references point to the exact same memory address).",
+      "difficulty": "Easy",
+      "topic": "Python"
+    },
+    {
+      "question": "What is List Comprehension and why is it preferred?",
+      "answer": "List comprehension provides an expressive, concise syntax for creating transformed and filtered lists faster than standard `for` loops due to C-level optimization.",
+      "difficulty": "Easy",
+      "topic": "Python"
+    },
+    {
+      "question": "What is the purpose of `*args` and `**kwargs`?",
+      "answer": "`*args` captures arbitrary positional arguments as a tuple, while `**kwargs` captures arbitrary keyword arguments as a dictionary in function signatures.",
+      "difficulty": "Medium",
+      "topic": "Python"
+    },
+    {
+      "question": "How does Garbage Collection operate in Python?",
+      "answer": "Python primarily relies on reference counting for immediate cleanup, supplemented by a cyclic garbage collector to detect and reclaim unreachable circular reference graphs.",
+      "difficulty": "Hard",
+      "topic": "Python"
+    },
+    {
+      "question": "What is the difference between Shallow Copy and Deep Copy?",
+      "answer": "Shallow copy creates a new collection referencing existing nested objects; deep copy recursively clones all nested objects into entirely distinct memory structures.",
+      "difficulty": "Medium",
+      "topic": "Python"
+    },
+    {
+      "question": "What is Duck Typing in Python?",
+      "answer": "A dynamic programming philosophy: 'If it walks like a duck and quacks like a duck, it is a duck.' Suitability is determined by method presence rather than inheritance.",
+      "difficulty": "Medium",
+      "topic": "Python"
+    },
+    {
+      "question": "What are Magic/Dunder methods in Python classes?",
+      "answer": "Dunder methods (like `__init__`, `__repr__`, `__add__`) enable operator overloading, custom string formatting, and deep integration with Python language protocols.",
+      "difficulty": "Medium",
+      "topic": "Python"
+    },
+    {
+      "question": "How does Exception Handling work with `try-except-else-finally`?",
+      "answer": "`try` executes risky code, `except` catches errors, `else` runs only if no exception occurred, and `finally` runs unconditionally for resource cleanup.",
+      "difficulty": "Easy",
+      "topic": "Python"
+    },
+    {
+      "question": "What is a Context Manager (`with` statement)?",
+      "answer": "Context managers implement `__enter__` and `__exit__` methods to guarantee reliable resource allocation and release (e.g., closing file streams or database locks).",
+      "difficulty": "Medium",
+      "topic": "Python"
+    },
+    {
+      "question": "What are Python Namespaces and Scope Resolution (LEGB)?",
+      "answer": "Python resolves variable identifiers following the LEGB order: Local, Enclosing function, Global module, and Built-in namespace.",
+      "difficulty": "Hard",
+      "topic": "Python"
+    }
+  ],
+  "artificial intelligence": [
+    {
+      "question": "What is the Turing Test in Artificial Intelligence?",
+      "answer": "Proposed by Alan Turing in 1950, it evaluates whether a computer's conversational behavior is indistinguishable from that of a human judge.",
+      "difficulty": "Easy",
+      "topic": "Artificial Intelligence"
+    },
+    {
+      "question": "What is the distinction between Narrow AI and General AI (AGI)?",
+      "answer": "Narrow AI is specialized to perform a specific dedicated task (e.g., chess, image recognition), whereas AGI possesses human-level cognitive flexibility across all domains.",
+      "difficulty": "Easy",
+      "topic": "Artificial Intelligence"
+    },
+    {
+      "question": "How does the A* Search algorithm work?",
+      "answer": "A* finds the shortest path using evaluation function f(n) = g(n) + h(n), combining exact cost from start g(n) with an admissible heuristic estimate to goal h(n).",
+      "difficulty": "Medium",
+      "topic": "Artificial Intelligence"
+    },
+    {
+      "question": "What is the Minimax algorithm and Alpha-Beta Pruning?",
+      "answer": "Minimax optimizes adversarial two-player turn-based games; Alpha-Beta pruning skips branches that cannot influence the final decision, dramatically reducing search depth.",
+      "difficulty": "Hard",
+      "topic": "Artificial Intelligence"
+    },
+    {
+      "question": "What is an Expert System?",
+      "answer": "An AI program that emulates the decision-making ability of a human specialist, composed of an explicit Knowledge Base (rules/facts) and an Inference Engine.",
+      "difficulty": "Easy",
+      "topic": "Artificial Intelligence"
+    },
+    {
+      "question": "What are Large Language Models (LLMs)?",
+      "answer": "Transformer-based neural networks trained on vast text corpora that predict subsequent tokens autoregressively to understand and generate fluent human language.",
+      "difficulty": "Medium",
+      "topic": "Artificial Intelligence"
+    },
+    {
+      "question": "What is the Transformer Attention Mechanism?",
+      "answer": "Self-attention computes dynamic weight correlations between all tokens in a sequence simultaneously using Query, Key, and Value matrices, capturing long-range context.",
+      "difficulty": "Hard",
+      "topic": "Artificial Intelligence"
+    },
+    {
+      "question": "What is Knowledge Representation in AI?",
+      "answer": "Formal methods (like Semantic Networks, Ontologies, First-Order Logic, and Frames) used to structure complex domain knowledge for automated reasoning engines.",
+      "difficulty": "Medium",
+      "topic": "Artificial Intelligence"
+    },
+    {
+      "question": "What is Prompt Engineering in Generative AI?",
+      "answer": "The discipline of crafting precise instructions, system roles, few-shot examples, and constraints to elicit accurate, structured, and hallucination-free LLM outputs.",
+      "difficulty": "Easy",
+      "topic": "Artificial Intelligence"
+    },
+    {
+      "question": "What is Retrieval-Augmented Generation (RAG)?",
+      "answer": "RAG enhances generative model answers by retrieving relevant external facts from a vector database before passing the combined context to the LLM for response synthesis.",
+      "difficulty": "Hard",
+      "topic": "Artificial Intelligence"
+    },
+    {
+      "question": "What is Heuristic Search in state-space exploration?",
+      "answer": "Search guided by practical problem-specific estimates that rank alternative paths to reach goals much faster than blind brute-force searches like BFS or DFS.",
+      "difficulty": "Medium",
+      "topic": "Artificial Intelligence"
+    },
+    {
+      "question": "What is Constraint Satisfaction Problem (CSP)?",
+      "answer": "A formulation where states are defined by variables that must take values from finite domains while adhering to specific constraints (e.g., Sudoku, Map Coloring).",
+      "difficulty": "Medium",
+      "topic": "Artificial Intelligence"
+    },
+    {
+      "question": "What are AI Hallucinations and why do they happen?",
+      "answer": "Hallucinations occur when an LLM produces plausible-sounding but factually false claims due to statistical pattern completion over probabilistic distributions without grounding.",
+      "difficulty": "Medium",
+      "topic": "Artificial Intelligence"
+    },
+    {
+      "question": "What is Forward Chaining vs Backward Chaining?",
+      "answer": "Forward chaining starts with known facts and applies rules to deduce new facts (data-driven); backward chaining starts with a goal and works backward to find supporting facts.",
+      "difficulty": "Hard",
+      "topic": "Artificial Intelligence"
+    },
+    {
+      "question": "What is Fine-Tuning in foundation models?",
+      "answer": "Taking a pre-trained base model and continuing training on a smaller, curated domain-specific dataset with lower learning rates to adapt style, terminology, and behavior.",
+      "difficulty": "Hard",
+      "topic": "Artificial Intelligence"
+    }
+  ],
+  "dbms": [
+    {
+      "question": "What are the ACID properties in database transactions?",
+      "answer": "Atomicity (all operations succeed or rollback), Consistency (integrity constraints preserved), Isolation (concurrent transactions execute independently), and Durability (committed changes persist).",
+      "difficulty": "Easy",
+      "topic": "DBMS"
+    },
+    {
+      "question": "What is Database Normalization and why is it performed?",
+      "answer": "The formal decomposition of tables to minimize data redundancy, save storage space, and prevent insertion, update, and deletion anomalies.",
+      "difficulty": "Easy",
+      "topic": "DBMS"
+    },
+    {
+      "question": "What is the difference between Primary Key and Foreign Key?",
+      "answer": "A Primary Key uniquely identifies a tuple within its own table; a Foreign Key points to a Primary Key in another table to enforce referential integrity.",
+      "difficulty": "Easy",
+      "topic": "DBMS"
+    },
+    {
+      "question": "What is the difference between B-Tree and B+ Tree Indexing?",
+      "answer": "In B-Trees, keys and data pointers are stored in all nodes; in B+ Trees, data pointers exist strictly in linked leaf nodes, enabling fast sequential range queries.",
+      "difficulty": "Hard",
+      "topic": "DBMS"
+    },
+    {
+      "question": "Explain SQL vs NoSQL architectural trade-offs.",
+      "answer": "SQL databases are relational, schema-enforced, ACID-compliant, and scale vertically; NoSQL databases are non-relational, flexible-schema, eventually consistent, and scale horizontally.",
+      "difficulty": "Medium",
+      "topic": "DBMS"
+    },
+    {
+      "question": "What is Two-Phase Locking (2PL) Protocol?",
+      "answer": "A concurrency control protocol with a growing phase (acquires locks without releasing any) and a shrinking phase (releases locks without acquiring new ones), guaranteeing serializability.",
+      "difficulty": "Hard",
+      "topic": "DBMS"
+    },
+    {
+      "question": "What is a Deadlock and how can it be handled in DBMS?",
+      "answer": "A deadlock occurs when two transactions hold locks on resources the other transaction needs. DBMS detects it using Wait-For Graphs and breaks it by aborting a victim transaction.",
+      "difficulty": "Medium",
+      "topic": "DBMS"
+    },
+    {
+      "question": "What is the difference between DELETE and TRUNCATE?",
+      "answer": "DELETE is a logged DML operation that can conditionally remove rows; TRUNCATE is a fast DDL command that deallocates all table data pages without individual row logging.",
+      "difficulty": "Easy",
+      "topic": "DBMS"
+    },
+    {
+      "question": "What is a Database View and what benefits does it offer?",
+      "answer": "A view is a virtual table defined by a saved SQL query that provides abstraction, hides sensitive columns, and simplifies complex multi-table queries without storing duplicate data.",
+      "difficulty": "Medium",
+      "topic": "DBMS"
+    },
+    {
+      "question": "What is Third Normal Form (3NF)?",
+      "answer": "A relation is in 3NF if it is in 2NF and contains no transitive functional dependencies, meaning every non-prime attribute depends solely and directly on candidate keys.",
+      "difficulty": "Medium",
+      "topic": "DBMS"
+    },
+    {
+      "question": "What are SQL Joins (Inner, Left, Right, Full Outer)?",
+      "answer": "Inner join matches rows present in both tables; Left/Right preserves all rows from one table regardless of matches; Full Outer keeps all records from both relations.",
+      "difficulty": "Easy",
+      "topic": "DBMS"
+    },
+    {
+      "question": "What is Write-Ahead Logging (WAL)?",
+      "answer": "A recovery mechanism requiring all transaction modifications to be recorded in non-volatile log files before the corresponding dirty data pages are flushed to disk.",
+      "difficulty": "Hard",
+      "topic": "DBMS"
+    },
+    {
+      "question": "What is the CAP Theorem in distributed databases?",
+      "answer": "In any distributed data store, it is impossible to simultaneously guarantee Consistency, Availability, and Partition Tolerance; systems must choose two.",
+      "difficulty": "Hard",
+      "topic": "DBMS"
+    },
+    {
+      "question": "What is the difference between Clustered and Non-Clustered Indexes?",
+      "answer": "A clustered index physically sorts table rows in memory (only one per table); non-clustered index stores sorted index keys with pointers back to original row data.",
+      "difficulty": "Medium",
+      "topic": "DBMS"
+    },
+    {
+      "question": "What is Database Sharding?",
+      "answer": "A horizontal partitioning technique that splits a large database across multiple physical database instances according to a specific shard key to distribute load.",
+      "difficulty": "Hard",
+      "topic": "DBMS"
+    }
+  ],
+  "computer networks": [
+    {
+      "question": "What are the 7 layers of the OSI Reference Model?",
+      "answer": "From bottom to top: Physical, Data Link, Network, Transport, Session, Presentation, and Application layers.",
+      "difficulty": "Easy",
+      "topic": "Computer Networks"
+    },
+    {
+      "question": "What is the difference between TCP and UDP?",
+      "answer": "TCP is connection-oriented, reliable, orders packets, and manages flow/congestion; UDP is connectionless, lightweight, unreliable, and optimized for real-time latency.",
+      "difficulty": "Easy",
+      "topic": "Computer Networks"
+    },
+    {
+      "question": "How does the TCP Three-Way Handshake establish a connection?",
+      "answer": "Client sends SYN; server responds with SYN-ACK; client returns ACK. Both sides negotiate initial sequence numbers and socket state before transmitting data.",
+      "difficulty": "Medium",
+      "topic": "Computer Networks"
+    },
+    {
+      "question": "How does Domain Name System (DNS) resolve a URL?",
+      "answer": "The client queries a recursive resolver, which hierarchically contacts Root, TLD (.com), and Authoritative name servers to translate human hostnames into IP addresses.",
+      "difficulty": "Medium",
+      "topic": "Computer Networks"
+    },
+    {
+      "question": "What is Subnetting and why is it used?",
+      "answer": "Dividing a large IP network into smaller subnetworks using subnet masks, which conserves IP addresses, reduces broadcast domain congestion, and bolsters security.",
+      "difficulty": "Medium",
+      "topic": "Computer Networks"
+    },
+    {
+      "question": "What is the difference between IPv4 and IPv6?",
+      "answer": "IPv4 uses 32-bit addresses (~4.3 billion addresses) formatted as decimal; IPv6 uses 128-bit hexadecimal addresses providing virtually limitless unique endpoints.",
+      "difficulty": "Easy",
+      "topic": "Computer Networks"
+    },
+    {
+      "question": "What is Network Address Translation (NAT)?",
+      "answer": "A router technique that remaps multiple private local IP addresses into a single public external IP address, conserving routable IPv4 addresses.",
+      "difficulty": "Medium",
+      "topic": "Computer Networks"
+    },
+    {
+      "question": "What is the role of ARP (Address Resolution Protocol)?",
+      "answer": "ARP maps known logical layer-3 IP addresses to physical layer-2 hardware MAC addresses on a local Ethernet broadcast network.",
+      "difficulty": "Medium",
+      "topic": "Computer Networks"
+    },
+    {
+      "question": "What is the difference between HTTP and HTTPS?",
+      "answer": "HTTPS layers SSL/TLS encryption and certificate verification over standard HTTP port 80, securing data in transit over port 443 against eavesdropping and tampering.",
+      "difficulty": "Easy",
+      "topic": "Computer Networks"
+    },
+    {
+      "question": "What is BGP (Border Gateway Protocol)?",
+      "answer": "The exterior gateway routing protocol that manages packet path determination between autonomous systems (AS) forming the core backbone of the global Internet.",
+      "difficulty": "Hard",
+      "topic": "Computer Networks"
+    }
+  ]
+}
