@@ -1,0 +1,26 @@
+# =========================================================
+# Netlify configuration for Smart Flashcards
+# =========================================================
+# IMPORTANT: this repository is a **Streamlit (Python) application**.
+# Netlify cannot run Python, so this file ONLY publishes the static
+# landing page in `netlify/` — it does not (and cannot) host `app.py`.
+#
+# -> The real interactive app must be deployed to a Python host.
+#    See DEPLOYMENT.md (Option A: Streamlit Community Cloud).
+# =========================================================
+
+[build]
+  # The static landing page lives in this sub-folder.
+  publish = "netlify"
+
+# Never show Netlify's 404 page — always serve the landing page.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
